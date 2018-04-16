@@ -1,10 +1,8 @@
-# ReasonNativeProject
+# reason-native-starter
 
 [`Reason`](http://reasonml.github.io/) project for native compilation:
 
 [More info on the workflow](https://reasonml.github.io/guide/native).
-
-[![Build Status](https://travis-ci.org/reasonml/ReasonNativeProject.svg?branch=master)](https://travis-ci.org/reasonml/ReasonNativeProject)
 
 ## Develop With OPAM
 
@@ -24,7 +22,7 @@ make build    # build/rebuild your files
 **Run**:
 
 ```sh
-./_build/install/default/bin/reason-native-bin
+make run
 ```
 
 **Develop**:
@@ -70,19 +68,3 @@ esy x reason-native-bin
   it this way from the command line).
 - Add dependencies by adding entries to the `package.json`, running `esy
   install` then `esy build`.
-
-
-## Developing Your Project
-The entrypoint of this project is the `./bin/test.re` file. Make a simple
-change to it and then rerun the build.
-
-`ReasonNativeProject` is meant to be the starting point of your own project. You'll
-want to make use of existing libraries in your app, so browse the growing set
-of `opam` packages in the [opam repository](http://opam.ocaml.org/packages/).
-
-
-## Troubleshooting
-
-In general, if something goes wrong, try upgrading your install of the project
-by running `opam upgrade ReasonNativeProject`, or if it failed to install and you
-later fixed it, `opam install ReasonNativeProject`.

@@ -1,0 +1,22 @@
+opam-version: "1.2"
+name: "reason-native-starter"
+version: "0.0.1"
+maintainer: "Tyler Martinez <slightlytyler@gmail.com>"
+authors: [
+  "Tyler Martinez <slightlytyler@gmail.com>"
+]
+license: "BSD"
+homepage: "https://github.com/slightlytyler/reason-native-starter"
+doc: "https://github.com/slightlytyler/reason-native-starter"
+bug-reports: "https://github.com/slightlytyler/reason-native-starter/issues"
+dev-repo: "git://github.com/slightlytyler/reason-native-starter.git"
+tags: [ "reason" "native" "starter" ]
+build: [
+  ["jbuilder" "build" "-p" name "-j" jobs]
+]
+depends: [
+  "jbuilder" {build}
+  "reason"  {= "3.0.4"}
+  "re"
+]
+available: [ ocaml-version >= "4.02" & ocaml-version < "4.05" ]
