@@ -3,7 +3,7 @@
  */
 print_string("!!!!!!\n");
 
-let msg = "Hello Reason!";
+let msg = "Hello Reason Test!";
 
 print_string(msg);
 
